@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>UI08_UINavigationController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>49EAD74B1C28FE6900C1992A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49EAD7641C28FE6A00C1992A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49EAD76F1C28FE6A00C1992A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
