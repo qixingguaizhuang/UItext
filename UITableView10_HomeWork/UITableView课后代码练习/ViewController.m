@@ -53,6 +53,14 @@
     self.tableView.separatorColor = [UIColor redColor];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+
+    /**  置顶视图 */
+//    
+//    self.tableView.tableHeaderView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width , 20)]autorelease];
+    
+    /** 置底视图*/
+    
+    self.tableView.tableFooterView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 300)] autorelease];
     
     [self.view addSubview:self.tableView];
     
@@ -152,6 +160,53 @@
     NSLog(@"ddd %ld, %ld", indexPath.section, indexPath.row);
 
 }
+
+
+
+
+
+/*设置标题头的宽度*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+
+{
+    
+    if (section == 0) {
+        
+        return 60;
+        
+    }
+    
+    return 30;
+    
+}
+
+/** 分区的顶部标题 */
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+
+{
+    
+    CGRect frameRect = CGRectMake(0, 0, 100, 40);
+    
+    UILabel *label = [[[UILabel alloc] initWithFrame:frameRect] autorelease];
+    
+    label.text = @"<首页还包括不偶奇偶>";
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    return label;
+    
+    
+    
+} 
+
+
+
+
+
+
+
 
 
 
